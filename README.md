@@ -4,7 +4,7 @@ This is the course homepage for Math 343 / 643 at Queens College, City Universit
 
 ## Setting up git and github to Submit Assignments
 
-We will use github and git for sharing code from this repository which you will edit then push to your own repository in order to hand in assignments. Instructions for setting up github and git, pulling this repository and creating your own repository can be found [here](https://github.com/kapelner/QC_Math_342W_Spring_2026/blob/master/syllabus/git_github_class_setup.pdf) for MAC, Windows and Linux.
+We will use github and git for sharing code from this repository which you will edit then push to your own repository in order to hand in assignments. Instructions for setting up github and git, pulling this repository and creating your own repository can be found [here](https://github.com/kapelner/QC_Math_343_Spring_2026/blob/master/syllabus/git_github_class_setup.pdf) for MAC, Windows and Linux.
 
 
 ## Lectures
