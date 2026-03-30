@@ -15,7 +15,7 @@ My lecture notes are scanned in as PDF files contributed by myself and will most
 
 <!-- -->
 * Homework 3 [(download)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw03/hw03t.pdf?raw=true) [(view)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw03/hw03t.pdf) (due 5/14 pushed to your github repo)
-* Homework 2 [(download)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw02/hw02t.pdf?raw=true) [(view)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw02/hw02t.pdf) (due 4/12 pushed to your github repo)
+* Homework 2 [(download)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw02/hw02t.pdf?raw=true) [(view)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw02/hw02t.pdf) (due 4/20 pushed to your github repo)
 * Homework 1 [(download)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw01/hw01t.pdf?raw=true) [(view)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw01/hw01t.pdf) (due 3/1 pushed to your github repo)
 
 ## Labs
@@ -28,7 +28,7 @@ My lecture notes are scanned in as PDF files contributed by myself and will most
 ## Exams
 
 * Midterm I, Mar 4 in class [(exam)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/exams/midterm1/midterm1.pdf) [(solutions)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/exams/midterm1/midterm1_solutions.pdf)
-* Midterm II, April 15 in class
+* Midterm II, April 22 in class
 * Final, TBA
 
 ## Practice Exams
