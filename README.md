@@ -22,7 +22,7 @@ My lecture notes are scanned in as PDF files contributed by myself and will most
 
 <!-- -->
 * [Lab 3](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/labs/lab03.Rmd) (due 5/15 pushed to your github repo) 
-* [Lab 2](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/labs/lab02.Rmd) (due 4/13 pushed to your github repo)
+* [Lab 2](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/labs/lab02.Rmd) (due 4/20 pushed to your github repo)
 * [Lab 1](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/labs/lab01.Rmd) (due 3/2 pushed to your github repo)
 
 ## Exams
