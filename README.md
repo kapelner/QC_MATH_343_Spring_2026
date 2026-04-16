@@ -40,7 +40,7 @@ My lecture notes are scanned in as PDF files contributed by myself and will most
 
 * Midterm II
 
-[(practice exam 1)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/master/exams/final/final.pdf) [(practice exam solutions 1)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/master/exams/final/final_solutions.pdf) 
+[(practice exam 1)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/master/exams/final/midterm2.pdf) [(practice exam solutions 1)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/master/exams/final/midterm2_solutions.pdf) 
 [(practice exam 2)](https://github.com/kapelner/QC_MATH_343_Spring_2024/blob/master/exams/midterm2/midterm2.pdf) [(practice exam solutions 2)](https://github.com/kapelner/QC_MATH_343_Spring_2024/blob/master/exams/midterm2/midterm2_solutions.pdf)
 
 * Final
