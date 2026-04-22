@@ -1,0 +1,329 @@
+\documentclass[12pt]{article}
+
+\include{preamble}
+
+\newtoggle{solutions}
+%\toggletrue{solutions}
+
+\newcommand{\instr}{\small Your answer will consist of a lowercase string (e.g. \texttt{aebgd}) where the order of the letters does not matter. \normalsize}
+
+\newcommand{\logbaseten}[1]{\text{log$_{10}$}\parens{#1}}
+
+\title{Math 343 / 643 Spring \the\year{} \\ Midterm Examination Two}
+\author{Professor Adam Kapelner}
+
+\date{April 22, \the\year{}}
+
+\begin{document}
+\maketitle
+
+\noindent Full Name \line(1,0){410}
+
+\thispagestyle{empty}
+
+\section*{Code of Academic Integrity}
+
+\footnotesize
+Since the college is an academic community, its fundamental purpose is the pursuit of knowledge. Essential to the success of this educational mission is a commitment to the principles of academic integrity. Every member of the college community is responsible for upholding the highest standards of honesty at all times. Students, as members of the community, are also responsible for adhering to the principles and spirit of the following Code of Academic Integrity.
+
+Activities that have the effect or intention of interfering with education, pursuit of knowledge, or fair evaluation of a student's performance are prohibited. Examples of such activities include but are not limited to the following definitions:
+
+\paragraph{Cheating} Using or attempting to use unauthorized assistance, material, or study aids in examinations or other academic work or preventing, or attempting to prevent, another from using authorized assistance, material, or study aids. Example: using an unauthorized cheat sheet in a quiz or exam, altering a graded exam and resubmitting it for a better grade, etc.\\
+\\
+\noindent I acknowledge and agree to uphold this Code of Academic Integrity. \\~\\
+
+\begin{center}
+\line(1,0){350} ~~~ \line(1,0){100}\\
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~signature~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ date
+\end{center}
+
+\normalsize
+
+\section*{Instructions}
+This exam is 75 minutes (variable time per question) and closed-book. You are allowed \textbf{one} page (front and back) of a \qu{cheat sheet}, blank scrap paper (provided by the proctor) and a graphing calculator (which is not your smartphone). Please read the questions carefully. Within each problem, I recommend considering the questions that are easy first and then circling back to evaluate the harder ones. No food is allowed, only drinks. %If the question reads \qu{compute,} this means the solution will be a number otherwise you can leave the answer in \textit{any} widely accepted mathematical notation which could be resolved to an exact or approximate number with the use of a computer. I advise you to skip problems marked \qu{[Extra Credit]} until you have finished the other questions on the exam, then loop back and plug in all the holes. I also advise you to use pencil. The exam is 100 points total plus extra credit. Partial credit will be granted for incomplete answers on most of the questions. \fbox{Box} in your final answers. Good luck!
+
+\pagebreak
+
+\problem Consider the following full-rank design matrix:
+
+\beqn
+\X := \bracks{\onevec_n~|~\x_{\cdot 1}~|~\ldots~|~ \x_{\cdot p}} = \threevec{\x_{1 \cdot}}{\vdots}{\x_{n \cdot}}
+\eeqn
+
+\noindent with column indices $0, 1, \ldots, p$ and row indices $1, 2, \ldots, n$. And let $\H$ be the orthogonal projection matrix (which is idempotent and symmetric) onto the column space of $\X$. We assume also a continuous (real-valued) response model which is linear in these measurements, i.e. $\Y = \X\bbeta + \berrorrv$. For the error term, we assume the \qu{core assumption},
+
+\beqn
+\berrorrv \sim \multnormnot{n}{\zerovec_n}{\sigsq \I_n} ~~~\text{where $\sigsq>0$ and thus}~~ \oneover{\sigsq} \berrorrv^\top\berrorrv \sim \chisq{n}.
+\eeqn
+
+\noindent Consider the following estimator for $\bbeta$: $\B := \XtXinvXt \Y$ and let $\Yhat := \X\B$ and $\E := \Y - \Yhat$.  We established in class that $\B \sim \multnormnot{p+1}{\bbeta}{\sigsq \XtXinv}$. We also established that $\B$ and $\E$ are independent. Let $\bv{\epsilon}$ denote the realization from $\berrorrv$.
+
+\begin{enumerate}[(a)]
+
+\subquestionwithpoints{2} Is $\B$ an unbiased estimator for $\bbeta$? Circle one: \iftoggle{solutions}{\inred{Yes}}{Yes} / No
+
+\subquestionwithpoints{2} Is $\B$ the maximum likelihood estimator for $\bbeta$? Circle one: \iftoggle{solutions}{\inred{Yes}}{Yes} / No
+
+\subquestionwithpoints{2} Is $\E$ an unbiased estimator estimator for $\sigsq$? Circle one: Yes / \iftoggle{solutions}{\inred{No}}{No}
+
+\subquestionwithpoints{2} Does $\expe{\berrorrv - \E} = \zerovec_n$? Circle one: \iftoggle{solutions}{\inred{Yes}}{Yes} / No
+\subquestionwithpoints{5} Write the $z$ test statistic for testing $H_0: \beta_{17} = 37$ assuming $\sigsq$ is known.
+
+
+\iftoggle{solutions}{\inred{
+\beqn
+&& \B \sim \multnormnot{p+1}{\bbeta}{\sigsq \XtXinv} \\
+&\mathimplies& B_{17} \sim \normnot{\beta_{17}}{\sigsq \XtXinv_{17,17}} \\
+&\mathimplies& \frac{B_{17} - \beta_{17}}{\sigma \sqrt{\XtXinv_{17,17}}} \sim \stdnormnot \\
+&\mathimplies& z = \frac{b_{17} - 37}{\sigma \sqrt{\XtXinv_{17,17}}} 
+\eeqn
+}}{~\spc{3}}
+\pagebreak
+
+\subquestionwithpoints{5} Find the distribution of $\hat{\Y}$ from the information given in the problem header and results from MATH 340. Simplify as much as possible.
+
+
+\iftoggle{solutions}{\inred{
+\beqn
+\Yhat := \X\B \sim \multnormnot{\dim\bracks{\X\B}}{(\X)\bbeta}{\sigsq (\X)\XtXinv(\Xt)} = \multnormnot{n}{\X\bbeta}{\sigsq \H}
+\eeqn
+}}{~\spc{7}}
+
+\subquestionwithpoints{8} Prove that $\berrorrv^\top(\I_n - \H)\berrorrv = $ SSE. Justify each step.
+
+\iftoggle{solutions}{\inred{
+\beqn
+\berrorrv^\top(\I_n - \H)\berrorrv &=&  \berrorrv^\top(\I_n - \H)(\I_n - \H)\berrorrv \eqncomment{since $\I_n - \H$ is idempotent} \\
+&=& \berrorrv^\top(\I_n - \H)^\top (\I_n - \H)\berrorrv  \eqncomment{since $\I_n - \H$ is symmetric} \\
+&=& ((\I_n - \H)\berrorrv)^\top (\I_n - \H)\berrorrv  \eqncomment{linear algebra identity} \\
+&=& \normsq{(\I_n - \H)\berrorrv}  \eqncomment{linear algebra identity} \\
+&=& \normsq{(\I_n - \H)(\Y - \X\bbeta)}  \eqncomment{substitution} \\
+&=& \normsq{(\I_n - \H)\Y - (\I_n - \H)\X\bbeta)}  \eqncomment{algebra} \\
+&=& \normsq{\E - \zerovec_n}  \eqncomment{symmetries from MATH 342W} \\
+&=& \E^\top \E = \sum_{i=1}^n E_i^2  \eqncomment{linear algebra identity} \\
+&=& \text{SSE} \eqncomment{by definition}
+\eeqn
+}}{~\spc{10}}
+\pagebreak
+
+
+
+
+
+\end{enumerate}
+
+
+\problem Consider the Boston Housing Data which has $n = 506$ and response \texttt{medv} with $\ybar = 22.53$ and $s_y = 9.20$. We assume the linear model is true and model \texttt{medv} using OLS on \texttt{zn + rm + nox + dis + lstat}, all continuous (non-categorical) features. Below is the $\XtXinv$ where $\X$ is the design matrix:
+
+\begin{Verbatim}[frame=single, fontsize = \small]
+            (Intercept)       zn       rm      nox      dis    lstat
+(Intercept)     0.58000  4.4e-04 -5.1e-02 -2.7e-01 -1.8e-02 -3.0e-03
+zn              0.00044  6.9e-06 -4.5e-05 -7.1e-05 -5.1e-05 -2.0e-07
+rm             -0.05100 -4.5e-05  6.9e-03  7.5e-04  6.3e-04  4.4e-04
+nox            -0.27000 -7.1e-05  7.5e-04  4.2e-01  1.5e-02 -1.9e-03
+dis            -0.01800 -5.1e-05  6.3e-04  1.5e-02  1.5e-03  4.3e-05
+lstat          -0.00300 -2.0e-07  4.4e-04 -1.9e-03  4.3e-05  8.9e-05
+\end{Verbatim}
+
+\noindent The RMSE for this regression is 5.289 and here are the slope estimates:
+
+
+\begin{Verbatim}[frame=single, fontsize = \small]
+(Intercept)          zn          rm         nox         dis       lstat 
+      16.14        0.06        4.44      -15.20       -1.44       -0.66
+\end{Verbatim}
+
+%\noindent Assume the \qu{core assumption} (see Problem 1 for its definition) except in (e,f,l,m) which make explicit a new assumption.
+
+\begin{enumerate}[(a)]
+
+\subquestionwithpoints{5} Assume that errors are independent. Given the information above, would you be able to create $\doublehat{CI}_{\beta_{\texttt{nox}}, 95\%}$, the confidence interval for the true slope parameter of the variable \texttt{nox}? If yes, then compute it below and indicate if the CI is approximate or exact. If no, explain why.
+
+\iftoggle{solutions}{\inred{
+No. In this assumption regime, we would need to use the bootstrap. The bootstrap involves resampling with replacement and fitting OLS each time. That information is not given above.
+}}{~\spc{3}}
+
+
+\subquestionwithpoints{5} Assume that errors are independent, mean zero and the errors are homoskedastic. Given the information above, would you be able to create $\doublehat{CI}_{\beta_{\texttt{nox}}, 95\%}$, the confidence interval for the true slope parameter of the variable \texttt{nox}? If yes, then compute it below and indicate if the CI is approximate or exact. If no, explain why.
+
+\iftoggle{solutions}{\inred{
+\beqn
+\doublehat{CI}_{\beta_{\texttt{nox}}, 95\%} \approx \bracks{b_{\texttt{nox}} \pm z_{97.5\%} s_e \sqrt{\XtXinv_{\texttt{nox}, \texttt{nox}}}} =  \bracks{-15.20 \pm 1.96 \cdot 5.289 \sqrt{0.42}} = \bracks{-21.92,  -8.48} 
+\eeqn
+}}{~\spc{5}}
+
+\pagebreak
+
+
+\subquestionwithpoints{5} Assume that errors are independent, mean zero and the errors are heteroskedastic. Given the information above, would you be able to create $\doublehat{CI}_{\beta_{\texttt{nox}}, 95\%}$, the confidence interval for the true slope parameter of the variable \texttt{nox}? If yes, then compute it below and indicate if the CI is approximate or exact. If no, explain why.
+
+\iftoggle{solutions}{\inred{
+No. Under the assumption of heteroskedasticity, we would need to use the Hubert-White robust sandwich estimator. This would involve using the residuals $e_1, \ldots, e_n$ to compute a diagonal matrix. We were not given that information above.
+}}{~\spc{6}}
+
+\subquestionwithpoints{5} Assume that errors are \textit{normal}, independent, mean zero and the errors are heteroskedastic. Given the information above, would you be able to create $\doublehat{CI}_{\beta_{\texttt{nox}}, 95\%}$, the confidence interval for the true slope parameter of the variable \texttt{nox}? If yes, then compute it below and indicate if the CI is approximate or exact. If no, explain why.
+
+\iftoggle{solutions}{\inred{
+No for the same reason in the previous question.
+}}{~\spc{5}}
+\pagebreak
+
+\subquestionwithpoints{5} Assume the core assumption. But now consider that the estimates in the problem header came from a ridge regression with $\lambda = 1$. Given the information above and the facts from problem 1, would you be able to create $\doublehat{CI}_{\beta_{\texttt{nox}}, 95\%}$, the confidence interval for the true slope parameter of the variable \texttt{nox}? If yes, then compute it below and indicate if the CI is approximate or exact. If no, explain why.
+
+\iftoggle{solutions}{\inred{
+No. Because we are not given hardly any of the information required to find the distribution of the \texttt{nox} slope coefficient estimator which is one dimension of the following vector rv:
+
+\beqn
+\B_{ridge} &=& \inverse{\XtX + \I_n} \Xt \Y = \inverse{\XtX + \I_n} \Xt (\X\bbeta + \berrorrv) \\
+&=& \inverse{\XtX + \I_n} \Xt \X\bbeta + \inverse{\XtX + \I_n}\berrorrv \\
+&\sim& \multnormnot{p+1}{\inverse{\XtX + \I_n} \Xt \X\bbeta}{\sigsq \inverse{\XtX + \I_n} \inverse{\XtX + \I_n}}
+\eeqn
+}}{~\spc{6}}
+
+
+\subquestionwithpoints{5} Assume the $\X$ matrix's columns were standardized so that the average of each column was zero and the standard deviation of each column was 1. Let $\lambda = 1000$. Would the slope coefficient estimates found in the problem header be expected for a lasso regression fit? Why or why not?
+
+\iftoggle{solutions}{\inred{
+No. After standardization, a large $\lambda = 1000$ will likely force the variables to zero or nor zero in a lasso.
+}}{~\spc{5}}
+\pagebreak
+
+\subquestionwithpoints{5} Assume the core assumption. Compute $\prob{R^2 > 0.9}$ under $H_0$ that all features in the model \texttt{zn, r, nox, dis, lstat} do not have any linear effect. You will need to express your answer using \texttt{pbeta($x, \alpha, \beta$)}, the CDF of the beta distribution. But each argument (i.e. $x, \alpha, \beta$) must be numeric.
+
+\iftoggle{solutions}{\inred{
+We learned in class that $R^2~|~H_0 \sim \betanot{\overtwo{p}}{\overtwo{n-(p+1)}}$ thus substituting in the direction of the integrated area, the value of $n = 506$ and the value of $p=5$,
+
+\beqn
+\cprob{R^2 > 0.9}{H_0} = 1 - \texttt{pbeta($0.9, 2.5, 250$)}
+\eeqn
+}}{~\spc{5}}
+
+\end{enumerate}
+
+\problem Consider the following survival distribution:
+
+\beqn
+Y \sim \text{Lomax}(\alpha, \beta) := \frac{\alpha}{\beta} \tothepow{1 + \frac{y}{\beta}}{-(\alpha + 1)} \indic{y > 0}
+\eeqn
+
+\noindent We will assume a restricted parameter space $\alpha > 2$, $\beta > 0$ so that the expectation and variance always exists:
+
+\beqn
+\expe{Y} = \frac{\beta}{\alpha - 1}, ~~ \var{Y} = \frac{\beta^2 \alpha}{(\alpha - 1)^2 (\alpha - 2)}
+\eeqn
+
+\noindent We would like to reparameterize the Lomax so that $\expe{Y} = \theta > 0$. We do so below:
+
+\beqn
+Y \sim \text{Lomax}(\alpha, \theta) := \frac{\alpha}{\theta(\alpha - 1)} \tothepow{1 + \frac{y}{\theta(\alpha - 1)}}{-(\alpha + 1)} \indic{y > 0}
+\eeqn
+
+\noindent We now wish to use a GLM to estimate $p$ slope coefficients $\bbeta$ using data from a matrix $\X$ defined in the problem 1 header.
+
+\begin{enumerate}[(a)]
+
+\subquestionwithpoints{5} What is an example link function $\phi$ we can use to connect $\theta$ to $\x_{i \cdot}\bbeta$ and why would your example work in this context?
+
+\iftoggle{solutions}{\inred{
+\beqn
+\theta = \phi(\x_{i \cdot}\bbeta) = e^{\x_{i \cdot}\bbeta}
+\eeqn
+
+This works because $\x_{i \cdot}\bbeta \in \reals$ and thus $e^{\x_{i \cdot}\bbeta} > 0$ which is the parameter space of $\theta$.
+}}{~\spc{4}}
+\pagebreak
+
+Regardless of your answer to the previous problem, employ $\theta = \phi(\x_{i \cdot}\bbeta) = e^{\x_{i \cdot}\bbeta}$ going forward. Also assume $Y_1, \ldots, Y_n \iid \text{Lomax}(\alpha, \theta)$ as defined in the problem header.
+
+\subquestionwithpoints{7} Write an expression below that would compute the $\B$, maximum likelihood estimator (not estimate) for vector $\bbeta$ and $A$, the maximum likelihood estimator (not estimate) for $\alpha$ as a function of $\x_{1 \cdot}, \ldots, \x_{n \cdot}, \Y$. You do not need to solve. You do not need to simplify. Assume there is \textit{no censoring}. There are many equivalent expressions that answer this question correctly.
+
+\iftoggle{solutions}{\inred{
+\beqn
+\braces{\B, A} := \argmax_{\bbeta \in \reals^p, ~\alpha > 2} \braces{\prod_{i=1}^n \frac{\alpha}{e^{\x_{i \cdot}\bbeta}(\alpha - 1)} \tothepow{1 + \frac{Y_i}{e^{\x_{i \cdot}\bbeta}(\alpha - 1)}}{-(\alpha + 1)} }
+\eeqn
+}}{~\spc{11}}
+
+
+
+\subquestionwithpoints{3} Are there any nuisance parameter(s) in this estimation? If yes, list the nuisance parameter(s). If no, write \qu{none}.
+
+\iftoggle{solutions}{\inred{
+$\alpha$
+}}{~\spc{0}}
+
+We employ the correct MLE for $\B, A$ going forward.
+
+\subquestionwithpoints{2} If there was censoring in $Y_1, \ldots, Y_n$ would the MLE expression in (b) change? Circle one: \iftoggle{solutions}{\inred{Yes}}{Yes} / No
+
+\subquestionwithpoints{2} Is $A$ asymptotically normal? Circle one: \iftoggle{solutions}{\inred{Yes}}{Yes} / No
+
+\subquestionwithpoints{2} Is $\var{A} = \var{Y}$? Circle one: Yes / \iftoggle{solutions}{\inred{No}}{No}
+
+\pagebreak
+
+We now fit the lung survival data on the uncensored observations. The response variable is days of survival. We find the following results:
+
+\begin{center}
+\begin{minipage}{13cm}
+\begin{Verbatim}[frame=single]
+                Value Std. Error     z       p
+(Intercept)  7.17e+00   1.08e+00  6.64 3.2e-11
+inst         2.05e-02   8.80e-03  2.32  0.0201
+age         -7.54e-03   8.06e-03 -0.94  0.3497
+sex          3.91e-01   1.39e-01  2.82  0.0048
+ph.ecog     -6.26e-01   1.58e-01 -3.95 7.7e-05
+ph.karno    -1.86e-02   7.67e-03 -2.43  0.0151
+pat.karno    7.68e-03   5.54e-03  1.39  0.1656
+meal.cal     7.32e-06   1.81e-04  0.04  0.9678
+wt.loss      1.10e-02   5.34e-03  2.07  0.0387
+
+Loglik(model)= -824.2   Loglik(intercept only)= -841.1
+\end{Verbatim}
+\end{minipage}
+\end{center}
+
+\subquestionwithpoints{6} Given the information above, would you be able to create $\doublehat{CI}_{\beta_{\texttt{age}}, 95\%}$, the confidence interval for the true slope parameter of the variable \texttt{age}? If yes, then compute it below to three significant digits and indicate if the CI is approximate or exact. If no, explain why.
+
+\iftoggle{solutions}{\inred{
+\beqn
+\doublehat{CI}_{\beta_{\texttt{age}}, 95\%} \approx \bracks{b_{\texttt{age}} \pm z_{97.5\%} s_{b_{\texttt{age}}}} = \bracks{-0.00754 \pm 1.96 \cdot 0.00806} = \bracks{-0.0233, 0.00826}
+\eeqn
+}}{~\spc{10}}
+\pagebreak
+
+\subquestionwithpoints{7} Test the omnibus null at the 5\% significance level. Justify each step. Here are some values of the inverse CDF of the $\chisq{df}$ distribution:
+
+\begin{center}
+\begin{minipage}{13cm}
+\begin{Verbatim}[frame=single,fontsize=\small]
+                Probability less than the critical value
+  df          0.90      0.95     0.975      0.99     0.999
+----------------------------------------------------------
+  1          2.706     3.841     5.024     6.635    10.828
+  2          4.605     5.991     7.378     9.210    13.816
+  3          6.251     7.815     9.348    11.345    16.266
+  4          7.779     9.488    11.143    13.277    18.467
+  5          9.236    11.070    12.833    15.086    20.515
+  6         10.645    12.592    14.449    16.812    22.458
+  7         12.017    14.067    16.013    18.475    24.322
+  8         13.362    15.507    17.535    20.090    26.124
+\end{Verbatim}
+\end{minipage}
+\end{center}
+
+\iftoggle{solutions}{\inred{
+Since $\doublehat{\Lambda} = 2(\natlog{\mathcal{L}_{\text{full}}} - \natlog{\mathcal{L}_{\text{reduced}}})$ and these log likelihood values are given in the parameter estimate table, we then calculate $\doublehat{\Lambda} = 2(-824.2 - -841.1) = 33.8 > \chisq{8, 95\%} = 15.507$ as determined from the $\chi^2$ table above since we have 8 features we are zeroing out, we reject $H_0$.
+}}{~\spc{8}}
+
+\subquestionwithpoints{5} Predict the number of days of survival for someone with inst = 1, age = 75 but all other measurements are zero.
+
+\iftoggle{solutions}{\inred{
+\beqn
+\hat{y}_\star = e^{\x_\star \b} = e^{b_0 + b_{\text{inst}} (1) + b_{\text{age}} (75)} = e^{7.17 + 0.0205 (1) + -0.00754 (75)} = e^{6.625} = 753.7~ \text{days}
+\eeqn
+}}{~\spc{4}}
+
+
+\end{enumerate}
+
+\end{document}
