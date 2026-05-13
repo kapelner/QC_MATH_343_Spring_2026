@@ -356,66 +356,6 @@ for (r in 1 : R){
 }
 ```
 
-We will now practice generating allocations for restricted designs.
-
-Create W for Fisher's Blocking design where we block on the covariate `sex`:
-
-```{r}
-Wblocking_sex = matrix(NA, n, R)
-#TO-DO
-```
-
-Create W for Fisher's Blocking design where we block on the covariate `ph.ecog`:
-
-```{r}
-Wblocking_ph_ecog = matrix(NA, n, R)
-#TO-DO
-```
-
-Create W for Fisher's Blocking design where we create B = 8 blocks on the covariate `age`:
-
-```{r}
-Wblocking_age = matrix(NA, n, R)
-#TO-DO
-```
-
-Create W for Students' rerandomization design retaining only the best 1% of allocations:
-
-```{r}
-Wrerand = matrix(NA, n, R)
-#TO-DO
-```
-
-Create W for the pairwise matching (PM) design. To do so, we use the nonbipartite matching algorithm from the package `nbpMatching` as below:
-
-```{r}
-#create the distance matrix D using the standardized covariate values (see 342 demo code for the code that does this)
-D = #TO-DO
-pacman::p_load(nbpMatching)
-indicies_pairs = as.matrix(nonbimatch(distancematrix(D))$matches[, c("Group1.Row", "Group2.Row")])
-rm(D)
-Wpm = matrix(NA, n, R)
-#TO-DO
-```
-For the problems below define "covariate balance" as the absolute standard deviation difference in a covariate between the subjects in the two arms. Hint: the `apply` function is your friend.
-
-Demonstrate that the average covariate balance for the variable age is better in the w's from Fisher's blocking design on age than in the w's from CRD. 
-
-```{r}
-#TO-DO
-```
-
-Demonstrate that the average covariate balance for all variables in the w's from Student's rerandomization design is better than in the w's from BCRD. 
-
-```{r}
-#TO-DO
-```
-
-Demonstrate that the average covariate balance for all variables in the w's from the PM design is better than in the w's from Student's rerandomization design. 
-
-```{r}
-#TO-DO
-```
 
 # Problem 6: Fisher's Randomization Test
 
@@ -427,7 +367,7 @@ pacman::p_load(data.table, R.utils)
 racism_sexism_agism_experimental_data = fread("racism_sexism_agism_experimental_data.csv.bz2")
 ```
 
-This experiment had many different arms: race, sex, age. For the purposes of this assignment, we will be looking just at the race arm, w = `tx_author_race` which we will binarize and the response will be y = `survey_willingness_to_pay` which we will convert into numeric. The original design was the CRD as the experiment was "sequential". You have experience with the CRD in the previous problem.
+This experiment had many different arms: race, sex, age. For the purposes of this assignment, we will be looking just at the race arm, w = `tx_author_race` which we will binarize and the response will be y = `survey_willingness_to_pay` which we will convert into numeric. The original design was the CRD (each w is allocated by a realization of an iid Bernoulli) as the experiment was "sequential".
 
 ```{r}
 wy = racism_sexism_agism_experimental_data[, .(w = tx_author_race, y = survey_willingness_to_pay)]
