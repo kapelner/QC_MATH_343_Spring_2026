@@ -1,10 +1,10 @@
 # MATH 343 / 643 Fall 2026
 
-This is the course homepage for Math 343 / 643 at Queens College, City University of New York taught by Professor Adam Kapelner. The syllabus can be read [here](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/syllabus/syllabus.pdf) and downloaded [here](https://raw.githubusercontent.com/kapelner/QC_MATH_343_Spring_2026/main/syllabus/syllabus.pdf). We use this [discord channel](https://discord.com/channels/1463307373580914803) for class announcements and discussions. 
+This is the course homepage for Math 343 / 643 at Queens College, City University of New York taught by Professor Adam Kapelner. The syllabus can be read [here](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/syllabus/syllabus.pdf) and downloaded [here](https://raw.githubusercontent.com/kapelner/QC_MATH_343_Spring_2026/main/syllabus/syllabus.pdf). We use this [discord channel](https://discord.com/channels/1463307373580914803) for class announcements and discussions. 
 
 ## Setting up git and github to Submit Assignments
 
-We will use github and git for sharing code from this repository which you will edit then push to your own repository in order to hand in assignments. Instructions for setting up github and git, pulling this repository and creating your own repository can be found [here](https://github.com/kapelner/QC_Math_343_Spring_2026/blob/master/syllabus/git_github_class_setup.pdf) for MAC, Windows and Linux.
+We will use github and git for sharing code from this repository which you will edit then push to your own repository in order to hand in assignments. Instructions for setting up github and git, pulling this repository and creating your own repository can be found [here](https://github.com/kapelner/QC_Math_343_Spring_2026/blob/main/syllabus/git_github_class_setup.pdf) for MAC, Windows and Linux.
 
 
 ## Lectures
@@ -14,39 +14,39 @@ My lecture notes are scanned in as PDF files contributed by myself and will most
 ## Homeworks
 
 <!-- -->
-* Homework 3 [(download)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw03/hw03t.pdf?raw=true) [(view)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw03/hw03t.pdf) (due 5/17 pushed to your github repo)
-* Homework 2 [(download)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw02/hw02t.pdf?raw=true) [(view)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw02/hw02t.pdf) (due 4/21 pushed to your github repo)
-* Homework 1 [(download)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw01/hw01t.pdf?raw=true) [(view)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw01/hw01t.pdf) (due 3/1 pushed to your github repo)
+* Homework 3 [(download)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/homeworks/hw03/hw03t.pdf?raw=true) [(view)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/homeworks/hw03/hw03t.pdf) (due 5/17 pushed to your github repo)
+* Homework 2 [(download)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/homeworks/hw02/hw02t.pdf?raw=true) [(view)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/homeworks/hw02/hw02t.pdf) (due 4/21 pushed to your github repo)
+* Homework 1 [(download)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/homeworks/hw01/hw01t.pdf?raw=true) [(view)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/homeworks/hw01/hw01t.pdf) (due 3/1 pushed to your github repo)
 
 ## Labs
 
 <!-- -->
-* [Lab 3](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/labs/lab03.Rmd) (due 5/17 pushed to your github repo) 
-* [Lab 2](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/labs/lab02.Rmd) (due 4/21 pushed to your github repo)
-* [Lab 1](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/labs/lab01.Rmd) (due 3/2 pushed to your github repo)
+* [Lab 3](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/labs/lab03.Rmd) (due 5/17 pushed to your github repo) 
+* [Lab 2](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/labs/lab02.Rmd) (due 4/21 pushed to your github repo)
+* [Lab 1](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/labs/lab01.Rmd) (due 3/2 pushed to your github repo)
 
 ## Exams
 
-* Midterm I, Mar 4 in class [(exam)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/exams/midterm1/midterm1.pdf) [(solutions)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/exams/midterm1/midterm1_solutions.pdf)
-* Midterm II, April 22 in class [(exam)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/exams/midterm2/midterm2.pdf) [(solutions)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/exams/midterm2/midterm2_solutions.pdf)
-* Final, Wednesday, May 20, 4-6PM KY258 [(exam)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/exams/final/final.pdf) [(solutions)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/exams/final/final_solutions.pdf)
+* Midterm I, Mar 4 in class [(exam)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/exams/midterm1/midterm1.pdf) [(solutions)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/exams/midterm1/midterm1_solutions.pdf)
+* Midterm II, April 22 in class [(exam)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/exams/midterm2/midterm2.pdf) [(solutions)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/exams/midterm2/midterm2_solutions.pdf)
+* Final, Wednesday, May 20, 4-6PM KY258 [(exam)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/exams/final/final.pdf) [(solutions)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/main/exams/final/final_solutions.pdf)
 
 ## Practice Exams
 
 * Midterm I 
 
-[(practice exam 1)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/master/exams/midterm1/midterm1.pdf) [(practice exam solutions 1)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/master/exams/midterm1/midterm1_solutions.pdf)
-[(practice exam 2)](https://github.com/kapelner/QC_MATH_343_Spring_2024/blob/master/exams/midterm1/midterm1.pdf) [(practice exam solutions 2)](https://github.com/kapelner/QC_MATH_343_Spring_2024/blob/master/exams/midterm1/midterm1_solutions.pdf)
+[(practice exam 1)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/main/exams/midterm1/midterm1.pdf) [(practice exam solutions 1)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/main/exams/midterm1/midterm1_solutions.pdf)
+[(practice exam 2)](https://github.com/kapelner/QC_MATH_343_Spring_2024/blob/main/exams/midterm1/midterm1.pdf) [(practice exam solutions 2)](https://github.com/kapelner/QC_MATH_343_Spring_2024/blob/main/exams/midterm1/midterm1_solutions.pdf)
 
 * Midterm II
 
-[(practice exam 1)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/master/exams/midterm2/midterm2.pdf) [(practice exam solutions 1)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/master/exams/midterm2/midterm2_solutions.pdf) 
-[(practice exam 2)](https://github.com/kapelner/QC_MATH_343_Spring_2024/blob/master/exams/midterm2/midterm2.pdf) [(practice exam solutions 2)](https://github.com/kapelner/QC_MATH_343_Spring_2024/blob/master/exams/midterm2/midterm2_solutions.pdf)
+[(practice exam 1)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/main/exams/midterm2/midterm2.pdf) [(practice exam solutions 1)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/main/exams/midterm2/midterm2_solutions.pdf) 
+[(practice exam 2)](https://github.com/kapelner/QC_MATH_343_Spring_2024/blob/main/exams/midterm2/midterm2.pdf) [(practice exam solutions 2)](https://github.com/kapelner/QC_MATH_343_Spring_2024/blob/main/exams/midterm2/midterm2_solutions.pdf)
 
 * Final
 
-[(practice exam 1)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/master/exams/final/final.pdf) [(practice exam solutions 2)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/master/exams/final/final_solutions.pdf)
-[(practice exam 2)](https://github.com/kapelner/QC_MATH_343_Spring_2024/blob/master/exams/final/final.pdf) [(practice exam solutions 2)](https://github.com/kapelner/QC_MATH_343_Spring_2024/blob/master/exams/final/final_solutions.pdf)
+[(practice exam 1)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/main/exams/final/final.pdf) [(practice exam solutions 2)](https://github.com/kapelner/QC_MATH_343_Spring_2025/blob/main/exams/final/final_solutions.pdf)
+[(practice exam 2)](https://github.com/kapelner/QC_MATH_343_Spring_2024/blob/main/exams/final/final.pdf) [(practice exam solutions 2)](https://github.com/kapelner/QC_MATH_343_Spring_2024/blob/main/exams/final/final_solutions.pdf)
 
 
 ## Office Hours
