@@ -14,14 +14,14 @@ My lecture notes are scanned in as PDF files contributed by myself and will most
 ## Homeworks
 
 <!-- -->
-* Homework 3 [(download)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw03/hw03t.pdf?raw=true) [(view)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw03/hw03t.pdf) (due 5/15 pushed to your github repo)
+* Homework 3 [(download)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw03/hw03t.pdf?raw=true) [(view)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw03/hw03t.pdf) (due 5/17 pushed to your github repo)
 * Homework 2 [(download)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw02/hw02t.pdf?raw=true) [(view)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw02/hw02t.pdf) (due 4/21 pushed to your github repo)
 * Homework 1 [(download)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw01/hw01t.pdf?raw=true) [(view)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/homeworks/hw01/hw01t.pdf) (due 3/1 pushed to your github repo)
 
 ## Labs
 
 <!-- -->
-* [Lab 3](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/labs/lab03.Rmd) (due 5/15 pushed to your github repo) 
+* [Lab 3](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/labs/lab03.Rmd) (due 5/17 pushed to your github repo) 
 * [Lab 2](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/labs/lab02.Rmd) (due 4/21 pushed to your github repo)
 * [Lab 1](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/labs/lab01.Rmd) (due 3/2 pushed to your github repo)
 
@@ -29,7 +29,7 @@ My lecture notes are scanned in as PDF files contributed by myself and will most
 
 * Midterm I, Mar 4 in class [(exam)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/exams/midterm1/midterm1.pdf) [(solutions)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/exams/midterm1/midterm1_solutions.pdf)
 * Midterm II, April 22 in class [(exam)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/exams/midterm2/midterm2.pdf) [(solutions)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/exams/midterm2/midterm2_solutions.pdf)
-* Final, Wednesday, May 20, 4-6PM KY258
+* Final, Wednesday, May 20, 4-6PM KY258 [(exam)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/exams/final/final.pdf) [(solutions)](https://github.com/kapelner/QC_MATH_343_Spring_2026/blob/master/exams/final/final_solutions.pdf)
 
 ## Practice Exams
 
