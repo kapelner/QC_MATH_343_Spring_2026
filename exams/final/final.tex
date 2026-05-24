@@ -269,7 +269,7 @@ beta_7  0.734 0.041
 \subquestionwithpoints{6} Assuming the data was collected using a simple random sample of subjects, provide an interpretation of the estimated coefficient of \textbf{$x_{3}$}, the binary variable assessing whether or not the subject is \texttt{WIC/SNAP} enrolled. Remember, the glm scale is \qu{logit proportion of calories from UHPFs}.
 
 \iftoggle{solutions}{\inred{
-When comparing two subjects (A) and (B) which are sampled in the same fashion as the other subjects in this dataset where (A) has \texttt{WIC/SNAP} and (B) does not have \texttt{WIC/SNAP} but share the same other observed measurements otherwise, then (A) is predicted to have an estimated logit proportion of calories from UHPFs 0.756 $\pm$ 0.042 higher than (B)'s logit proportion of calories from UHPFs assuming the log odds of calories from UHPFs is linear in the measurements considered herein.
+When comparing two subjects (A) and (B) which are sampled in the same fashion as the other subjects in this dataset where (A) has \texttt{WIC/SNAP} and (B) does not have \texttt{WIC/SNAP} but share the same other observed measurements otherwise, then (A) is predicted to have an estimated logit proportion of calories from UHPFs 0.756 $\pm$ 0.042 higher than (B)'s logit proportion of calories from UHPFs assuming the log odds of calories from UHPFs is linear in the measurements considered herein and remains stationary.
 }}{~\spc{7}}
 
 Instead of the Laplace prior $f(\bbeta, \theta_0, \theta_1,\phi) \propto 1$, we now consider the following prior:
@@ -298,6 +298,8 @@ You would take the log of your answer from (b) to obtain the log likelihood. The
 \beqn
 \doublehat{CI}_{\beta_7, 95\%} \approx \bracks{\doublehat{\beta_7}^{MLE} \pm 1.96 s_{\beta_7}}
 \eeqn
+
+Alternatively, you can use the bootstrap.
 }}{~\spc{20}}
 \pagebreak
 
@@ -429,7 +431,7 @@ Regardless of what you wrote in the previous question, assume the data in this e
 \subquestionwithpoints{7} Provide an interpretation of the estimated coefficient of $w = x_3$, the binary variable assessing whether or not the subject is \texttt{WIC/SNAP} enrolled. Remember, the glm scale is \qu{logit proportion of calories from UHPFs}.
 
 \iftoggle{solutions}{\inred{
-If a person receives \texttt{WIC/SNAP} and all other characteristics about this person stays constant, then the estimated logit proportion of calories from UHPFs will resultingly increase in 0.756 $\pm$ 0.042 assuming the logit proportion of calories from UHPFs is linear in the measurements considered herein.
+If a person receives \texttt{WIC/SNAP} and all other characteristics about this person stays constant, then the estimated logit proportion of calories from UHPFs will resultingly increase in 0.756 $\pm$ 0.042 assuming the logit proportion of calories from UHPFs is linear in the measurements considered herein and remains stationary.
 }}{~\spc{11}}
 
 \subquestionwithpoints{3} Treating the $y$ as continuous metric, assuming homoskedastic error and an additive treatment effect and ignoring the covariates, what is the optimal design?
